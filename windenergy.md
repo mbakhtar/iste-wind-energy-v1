@@ -12,8 +12,7 @@ download and follow the steps to pair your micro:bit.
 
 ## Step 2
 Click on the ``||fwdSensors:Sensors||`` drawer and find the 
-``||fwdSensors:on dial1 turned delta||`` block. You will need two of these blocks 
-Drag the block on the coding space and duplicate it.
+``||fwdSensors:on dial1 turned delta||`` block. Duplicate it.
 Hit download to activate your ``||fwdSensors:Dial||`` and a ``||fwdSensors:Touch button||`` 
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
@@ -34,10 +33,9 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) 
 ```
 
 ## Step 4
-To control the motion of the ``||Wind Mill||`` the ``||fwdSensors:Dial's||``
-clockwise and counter clockwise turn will increase and decrease the speed of it.
-Click on ``||fwdMotors:Motors||`` drawers and drag 
-``||fwdMotors:set servo1 to 0 %||`` to place it under 
+To control the speed of the ``||Wind Mill||`` use the ``||fwdSensors:Dial||``
+From the ``||fwdMotors:Motors||`` drawer nest 
+``||fwdMotors:set servo1 to 0 %||`` under the
 ``||fwdSensors:on dial1 turned delta||`` block. Duplicate ``||fwdSensors:set servo1 to 0 %||``
 and placed it under the other ``||fwdSensors:on dial1 turned delta||`` block as well.
 ```blocks
