@@ -8,8 +8,9 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 Plug your USB cable into the micro:bit and insert it into the 
 Climate Action Kit board. Click on the button to the right of 
 download and follow the steps to pair your micro:bit.
-![pair microbit](https://raw.githubusercontent.com/mbakhtar/iste-wind-energy-v1/master/pair%20microbit-280x203.gif)
 ![breakout board](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/breakout-resized.png)
+![pair microbit](https://raw.githubusercontent.com/mbakhtar/iste-wind-energy-v1/master/pair%20microbit-280x203.gif)
+
 
 
 ## Step 2
