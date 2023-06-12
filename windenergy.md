@@ -4,6 +4,10 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 =github:climate-action-kits/pxt-fwd-edu
 =github:climate-action-kits/pxt-fwd-edu
 ```
+## @showdialog
+Welcome to Wind Turbine Coding Tutorial
+![built project](https://raw.githubusercontent.com/mbakhtar/iste-wind-energy-v1/master/project%20-%20windturbine.png)
+
 ## Step 1 @showdialog
 Plug your USB cable into the micro:bit and insert it into the 
 Climate Action Kit board. 
