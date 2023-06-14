@@ -135,3 +135,4 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) 
 ## Step 12
 ``|Download|`` and test your code.
 Congratulations on completing your Wind Turbine Project! - Go back to the lesson for more activities and extensions.
+Click [here](https://forwardedu.com/course/powering-the-future-with-wind-energy/) to go back to the lesson.
