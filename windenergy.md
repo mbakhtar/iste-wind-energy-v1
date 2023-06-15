@@ -22,13 +22,13 @@ Click three dots besides ``|Download|`` button and follow the steps to pair your
 
 ## Step 5
 Click ``||fwdSensors:Sensors||`` drag and drop
-``||fwdSensors:on dial1 turned delta||`` block on workspace. 
+``||fwdSensors:on dial1 turned difference||`` block in workspace. 
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
     })
 ```
 ## Step 6
-Right click ``||fwdSensors:on dial1 turned delta||`` block and duplicate. _Note: New block will be grey._
+Right click ``||fwdSensors:on dial1 turned difference||`` block and duplicate. _Note: New block will be grey._
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
     })
@@ -36,7 +36,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
     })
 ```
 ## Step 7
-Change the direction arrow of the greyed out ``||fwdSensors:on dial1 turned delta||`` block. 
+Change the direction arrow of the greyed out ``||fwdSensors:on dial1 turned delta||`` block. _Note: Greyed out block will turn green._
 ![dial direction](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/dial%20direction%20change.gif)
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
@@ -46,7 +46,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) 
 ```
 ## Step 8
 Click ``||fwdSensors:Sensors||`` drag and drop 
-``||fwdSensors:on touch down||`` block to workspace.
+``||fwdSensors:on touch down||`` block in workspace.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
@@ -136,4 +136,3 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) 
 ## Step 15
 ``|Download|`` and test your code.
 Congratulations on completing your Wind Turbine Project! - Go back to the lesson for more activities and extensions.
-Click [here](https://forwardedu.com/course/powering-the-future-with-wind-energy/) to go back to the lesson.
