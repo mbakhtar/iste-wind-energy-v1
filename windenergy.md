@@ -37,7 +37,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (differen
 ```
 ## Step 7
 Change the direction arrow of the greyed out ``||fwdSensors:on dial1 turned difference||`` block. _Note: Greyed out block will turn green._
-![dial direction](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/dial%20direction%20change.gif)
+![dial direction](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/dial%20direction%20diff.gif)
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     })
