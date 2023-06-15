@@ -24,24 +24,24 @@ Click three dots besides ``|Download|`` button and follow the steps to pair your
 Click ``||fwdSensors:Sensors||`` drag and drop
 ``||fwdSensors:on dial1 turned difference||`` block in workspace. 
 ```blocks
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     })
 ```
 ## Step 6
 Right click ``||fwdSensors:on dial1 turned difference||`` block and duplicate. _Note: New block will be grey._
 ```blocks
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     })
 ```
 ## Step 7
-Change the direction arrow of the greyed out ``||fwdSensors:on dial1 turned delta||`` block. _Note: Greyed out block will turn green._
+Change the direction arrow of the greyed out ``||fwdSensors:on dial1 turned difference||`` block. _Note: Greyed out block will turn green._
 ![dial direction](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/dial%20direction%20change.gif)
 ```blocks
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (difference) {
     })
 ```
 ## Step 8
@@ -50,34 +50,34 @@ Click ``||fwdSensors:Sensors||`` drag and drop
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (difference) {
     })
 ```
 ## Step 9
 Click ``||fwdMotors:Motors||`` drag and drop 
 ``||fwdMotors:set servo1 to 50 %||`` inside
-``||fwdSensors:on dial1 turned delta||`` block.
+``||fwdSensors:on dial1 turned difference||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(50)
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (difference) {
     })
 ```
 ## Step 10 
 Right click ``||fwdMotors:set servo1 to 50 %||`` block and duplicate.
-Drag and drop inside the second ``||fwdSensors:on dial1 turned delta||`` block.
+Drag and drop inside the second ``||fwdSensors:on dial1 turned difference||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(50)
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(50)
 })
 ```
@@ -87,10 +87,10 @@ Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(50)
 })
 ```
@@ -99,10 +99,10 @@ Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
@@ -112,10 +112,10 @@ Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set servo1 50 %||`` b
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     fwdMotors.servo1.fwdSetSpeed(50)
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
@@ -126,10 +126,10 @@ to ``||0||``.
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     fwdMotors.servo1.fwdSetSpeed(0)
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (delta) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
