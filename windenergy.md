@@ -2,7 +2,6 @@
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 =github:climate-action-kits/pxt-fwd-edu
-=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Step 1 @showdialog
 Welcome to Wind Turbine Coding Tutorial
@@ -132,3 +131,4 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ## Step 15
 ``|Download|`` and test your code.
 Congratulations on completing your Wind Turbine Project! - Go back to the lesson for more activities and extensions.
+Want to check your code click [here](https://makecode.microbit.org/_AssU6gUTi84C).
